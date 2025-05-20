@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>My Programming Challenges Page - Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="menubar">
+            <h1 class="title">Welcome to my Website</h1>
+            <div class="mainmenu">
+                <ul>
+                    <li>Home</li>
+                    <li>Challenges</li>
+                    <li><a href="./Contribute.html">Contribute to the crew</a></li>
+                    <li><button onclick="location.href='./Login.html'">Sign In</button></li>
+                    <li><img class="image" alt="login" src="./Media/IMG_5530.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="bannertext">
+                <h2>Welcome to your Programming Fundamental pages</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora fugiat debitis recusandae impedit suscipit numquam nostrum at obcaecati, exercitationem doloribus deleniti, distinctio eaque earum nisi sed velit repellendus? Mollitia.
+                </p>
+                <ul>
+                    <li><button>Visit the database</button></li>
+                    <li><button>Meet the crew</button></li>
+                </ul>
+            </div>
+            <div class="banner">
+                <img class="bannerimg" alt="Programming" src="./Media/programming.png" />
+            </div>
+        </div>
+
+        <section>
+            <h2>Our Programming Database</h2>
+            <div class="greatcontainer">
+                <div class="card">
+                    <img class="flowchart" alt="Flowchart" src="./Media/Imagen Emplyees Flowchart.png" />
+                    <h5 class="flowchartitle">Employees salary problem</h5>
+                    <p class="flowchart">
+                        An employee needs to calculate their weekly salary:<br />
+                        - If working 40 hours or less: $16/hour.<br />
+                        - If working more than 40 hours: $16/hour for the first 40 hours and $20/hour extra.
+                    </p>
+                    <button>Watch the Flowchart</button>
+                </div>
+                <div class="card">
+                    <img class="flowchart" alt="Flowchart" src="./Media/Imagen Emplyees Flowchart.png" />
+                    <h5 class="flowchartitle">Restaurant consumption problem</h5>
+                    <p class="flowchart">
+                        A restaurant offers:<br />
+                        - 10% discount for consumption up to $100.<br />
+                        - 20% discount for consumption above $100.<br />
+                        In both cases, 12% tax applies.
+                    </p>
+                    <button onclick="location.href='./Media/Imagen Emplyees Flowchart.png'">Watch the Flowchart</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="challenge-section" style="background-color: #dfffdc; padding: 20px; margin: 40px 0; border-radius: 10px;">
+            <h2 style="color: #721e86;">An additional challenge for you!</h2>
+            <p>Type a number between 0 and 100. Try to guess the number!</p>
+            <div style="display: flex; gap: 10px; max-width: 500px; flex-wrap: wrap;">
+                <input id="guessInput" type="number" min="0" max="100" placeholder="Enter your guess" style="flex: 1; padding: 10px; border-radius: 5px; border: 1px solid #ccc;" />
+                <button id="guessButton" style="background-color: #77167a; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;">Guess now!</button>
+            </div>
+            <p id="guessResult" style="margin-top: 10px; font-weight: bold;"></p>
+        </div>
+
+        <section class="mycrew" id="crew">
+            <h2 class="crewtitle">Meet our crew</h2>
+            <div class="cardcrew">
+                <img class="crewimage" alt="My Photo" src="./Media/IMG_5799.jpeg" />
+                <h5>Sarah Alejandra Gutierrez Arias</h5>
+                <h6>Student</h6>
+                <p class="crewparagraph">I am here to help you with whatever you need. Thank you!</p>
+            </div>
+        </section>
+
+        <section class="mycrew" id="contribute">
+            <h2 class="crewtitle">Contribute to the project</h2>
+            <div class="cardcrew">
+                <button class="contributebutton">More information here</button>
+            </div>
+        </section>
+
+        <section class="subscription-section" style="text-align: center; margin-top: 40px;">
+            <h2 style="color: rgb(48, 13, 57);">Do you want more information about our project?</h2>
+            <p>Type your email to subscribe and get full access to your content!</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 10px;">
+                <input type="email" placeholder="anyexample@mail.com" style="padding: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc;" />
+                <button style="background: linear-gradient(to right, #c04fa0, #29052c); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer;">Send</button>
+            </div>
+            <div style="margin-top: 20px; background-color: #f0f0f0; display: inline-block; padding: 10px 20px; border-radius: 5px; font-weight: bold; color: #4d1274;">
+                Thanks for trusting us! You will receive daily challenges in your mail!
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programming Challenges</p>
+    </footer>
+
+    <script>
+        // Calculating the volume of a sphere
+        const pi = 3.141592;
+        let radius = Number(prompt("Type the radius:"));
+        let volume = (4 / 3) * pi * Math.pow(radius, 3);
+        alert("The volume of the sphere is: " + volume);
+
+        // Determine if a number is negative, positive, or zero
+        let number = Number(prompt("Type a number:"));
+        if (number < 0) {
+            alert("This number is negative");
+        } else if (number > 0) {
+            alert("This number is positive");
+        } else {
+            alert("This number is zero");
+        }
+
+        // Multiplication table of 3
+        let limit = Number(prompt("Enter a limit for the multiplication table of 3:"));
+
+        console.log("Using for loop:");
+        for (let i = 0; i <= limit; i++) {
+            console.log("3 x " + i + " = " + (3 * i));
+        }
+
+        console.log("Using while loop:");
+        let i = 0;
+        while (i <= limit) {
+            console.log("3 x " + i + " = " + (3 * i));
+            i++;
+        }
+
+        // Guessing game
+        const secretNumber = Math.floor(Math.random() * 101);
+        const guessButton = document.getElementById("guessButton");
+        const guessInput = document.getElementById("guessInput");
+        const guessResult = document.getElementById("guessResult");
+
+        guessButton.addEventListener("click", function () {
+            const userGuess = Number(guessInput.value);
+            if (userGuess === secretNumber) {
+                guessResult.textContent = "Congratulations! You guessed it!";
+                guessResult.style.color = "green";
+            } else if (userGuess < secretNumber) {
+                guessResult.textContent = "Too low. Try again!";
+                guessResult.style.color = "red";
+            } else {
+                guessResult.textContent = "Too high. Try again!";
+                guessResult.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
+
